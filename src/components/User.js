@@ -3,6 +3,10 @@ import { Component } from 'react';
 
 class User extends Component{
 
+	componentWillUnmount(){
+		console.log('User component is being removed');
+	}
+
 	render(){
 	return(
 		<div className={classes.user}>
